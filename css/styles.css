@@ -3,64 +3,63 @@
   --accent-color: #2196f3;
   --second-color: #757575;
   --other-color: #ffffff;
+  --btn-color: #188ce8;
+  --main-color: #2f303a;
+  --filters-color: #f5f4fa;`
 }
 
 body {
   font-family: "Roboto", sans-serif;
-  color: var(--first-color);
-}
+  color:var(--second-color)
+  font-size: 14px;
+line-height: 1.71;
+letter-spacing: 0.03em;
+} 
+
+address {font-style: normal;}
 .list {
   list-style: none;
 }
-.link {
-  text-decoration: none;
+.link { text-decoration: none;
+  color: inherit;
 }
 
+
 /*стилизация header*/
-.header-logo-link {
+.logo {
   font-family: "Raleway";
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--accent-color);
 }
+.logo-header{color:var(--first-color)}
+.logo-footer{color:var(--other-color)}
 /*Стилизация Nav*/
-
-.nav-item .link {
-  font-family: "Roboto";
+.nav-list{color:var(--first-color)}
+.header-link {
+  
   font-weight: 500;
-  font-size: 14px;
+  
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: var(--first-color);
+ 
 }
-.nav-item .link:hover,
-.nav-item .link:focus {
+.header-link:hover,
+.header-link:focus 
+.link-current{
   color: var(--accent-color);
 }
-.nav-list .link-current {
-  color: var(--accent-color);
-}
+.header-contact{color: var(--second-color);}
 
-/*Стилизация контактов*/
-.header-item .link {
-  font-family: "Roboto";
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: #757575;
-}
-.header-item .link:hover,
-.header-item .link:focus {
-  color: var(--accent-color);
-}
+
+
 /*Стилизация main*/
-.main {
-  background: #2f303a;
+.hero {
+  background: var(--main-color);
 }
 .main-title {
-  font-family: "Roboto";
+  
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -79,7 +78,7 @@ body {
 }
 .main-btn:hover,
 .main-btn:focus {
-  background-color: #188ce8;
+  background-color: var(--btn-color);
 }
 
 /*Стилизация hero*/
@@ -91,17 +90,15 @@ body {
   margin: -1px;
 }
 
-.hero-title {
-  font-family: "Roboto";
-  font-weight: 700;
+.feature-title {
+  
   font-size: 14px;
   line-height: 1.14;
-  letter-spacing: 0.03em;
+ 
   text-transform: uppercase;
   color: var(--first-color);
 }
-.hero-text {
-  font-family: Roboto;
+.feature-text {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -109,67 +106,50 @@ body {
 }
 /*Стилизация pre-about*/
 
-.pre-about-title {
-  font-family: "Roboto";
-  font-weight: 700;
+.section-title {
+ 
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
-  letter-spacing: 0.03em;
+
   color: var(--first-color);
 }
 /*Стилизация about*/
-.about-title {
-  font-family: "Roboto";
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  letter-spacing: 0.03em;
-}
+
 
 .about-after-title {
-  font-family: "Roboto";
-  font-weight: 500;
+ 
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
-  letter-spacing: 0.03em;
+ 
   color: var(--first-color);
 }
 .about-text {
-  font-family: "Roboto";
-  font-size: 16px;
+ 
   line-height: 1.19;
   text-align: center;
-  letter-spacing: 0.03em;
+  
   color: var(--second-color);
 }
 
 /*Стилизация footer*/
-.logo-link:hover,
-.logo-link:focus {
-  color: grey;
+.address-link:hover,
+.address-link:focus {
+  color: var(--btn-color);
 }
 .footer {
-  background-color: #2f303a;
+  background-color: var(--main-color);
 }
 
-.footer-logo {
-  font-family: "Raleway";
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  color: var(--accent-color);
-}
-.logo-link {
+
+.address-link {
   font-family: "Roboto";
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: var(--other-color);
+  color: var(--filters-color);
 }
 .footer-link {
   font-family: "Roboto";
@@ -177,12 +157,12 @@ body {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--second-color);
 }
 
 .footer-link:hover,
 .footer-link:focus {
-  color: grey;
+  color: var(--accent-color);
 }
 /*Стилизация фильтров*/
 .filters-btn:hover,
@@ -198,11 +178,11 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--first-color);
-  background: #f5f4fa;
+  background: var(--filters-color);
 }
 /*Стилизация контенту*/
 .content {
-  background-color: #f5f4fa;
+  background-color: var(--filters-color);
 }
 .content-title {
   font-family: "Roboto";

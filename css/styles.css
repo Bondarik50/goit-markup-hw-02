@@ -141,11 +141,7 @@ address {font-style: normal;}
   color: var(--filters-color);
 }
 .footer-link {
-  font-family: "Roboto";
-  font-style: normal;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
+
   color: var(--second-color);
 }
 
